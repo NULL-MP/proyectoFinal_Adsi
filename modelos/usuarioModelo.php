@@ -6,7 +6,7 @@
 
             protected static function agregar_usuario_modelo($datos){
                 $sql=mainModel::conectar()->prepare("INSERT INTO tblusuario(usuNombre,usuUsuario,usuCorreo,Privilegio,usuPassword) VALUES(:Nombre,:Usuario,:Correo,:Privilegio,:Password)");
-
+                // se capturan los datos
                 $sql->bindParam(":Nombre",$datos['Nombre']);
                 $sql->bindParam(":Usuario",$datos['Usuario']);
                 $sql->bindParam(":Correo",$datos['Correo']);
