@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html 
+lang="en"
+lang="en"
+class="light-style layout-menu-fixed"
+dir="ltr"
+data-theme="theme-default"
+data-assets-path="../assets/"
+data-template="vertical-menu-template-free">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0>
+    <title>Seguimiento</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- css -->
+    <link rel="stylesheet" href="../assets/home/css/core.css">
+    <link rel="stylesheet" href="../assets/home/css/theme-default.css">
+    <link rel="stylesheet" href="../assets/css/demo.css">
+    <!-- home-->
+    <link rel="stylesheet" href="../assets/home/libs/perfect-scrollbar/perfect-scrollbar.css">
+    <link rel="stylesheet" href="../assets/home/libs/apex-charts/apex-charts.css">
+    <!-- script-->
+    <script src="../assets/home/js/helpers.js"></script>
+    <script src="../assets/js/config.js"></script>
+
+</head>
+<body>
+    <div class="layout-wrapper layout-content-navbar">
+        <div class="layout-container">
+            <!--sidebar-menu-->
+            <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
+                <div class="app-brand demo">
+                    <a href="index.html" class="app-brand-link">
+                        <span class="app-brand-logo demo">
+                            <img src="../img/sofia_plus.png" class="img" alt="imagen no encontrada" width="80">
+                        </span>
+                    </a>
+                    <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
+                        <i class="bx bx-chevron-left bx-sm align-middle"></i>
+                    </a>
+                </div>
+                <div class="menu-inner-shadow"></div>
+
+                <ul class="menu-inner py-1">
+                    <!-- Dashboard -->
+            <li class="menu-item active">
+                <a href="index.html" class="menu-link">
+                  <i class="menu-icon tf-icons bx bx-home-circle"></i>
+                  <div data-i18n="Analytics">Home</div>
+                </a>
+              </li>
+  
+              <!-- Layouts -->
+              <li class="menu-item">
+                <a href="javascript:void(0);" class="menu-link menu-toggle">
+                  <i class="menu-icon tf-icons bx bxs-calendar"></i>
+                  <div data-i18n="Layouts">Seguimientos</div>
+                </a>
+  
+                <ul class="menu-sub">
+                  <li class="menu-item">
+                    <a href="#" class="menu-link">
+                        <i class='menu-icon tf-icons bx bx-add-to-queue m-2'></i>
+                      <div data-i18n="Without menu">Añadir estado de practica</div>
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#" class="menu-link">
+                        <i class='menu-icon tf-icons bx bx-detail m-2'></i>
+                      <div data-i18n="Without navbar">Listado de aprendices</div>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="menu-item">
+                <a href="javascript:void(0);" class="menu-link menu-toggle">
+                  <i class="menu-icon tf-icons bx bx-dock-top"></i>
+                  <div data-i18n="Account Settings">Evidencias</div>
+                </a>
+                <ul class="menu-sub">
+                  <li class="menu-item">
+                    <a href="#" class="menu-link">
+                        <i class='menu-icon tf-icons bx bx-download m-2'></i>
+                      <div data-i18n="Account">Añadir evidencias</div>
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#" class="menu-link">
+                        <i class='menu-icon tf-icons bx bx-layer m-2'></i>
+                      <div data-i18n="Notifications">Listado de evidencias</div>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item">
+                <a href="javascript:void(0);" class="menu-link menu-toggle">
+                  <i class="menu-icon tf-icons bx bx-message-alt-dots"></i>
+                  <div data-i18n="Authentications">Solicitudes</div>
+                </a>
+                <ul class="menu-sub">
+                  <li class="menu-item">
+                    <a href="#" class="menu-link" target="_blank">
+                        <i class='menu-icon tf-icons  bx bx-envelope m-2'></i>
+                      <div data-i18n="Basic">todas las solicitudes</div>
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#" class="menu-link" target="_blank">
+                        <i class=' menu-icon tf-icons bx bx-comment-add m-2'></i>
+                      <div data-i18n="Basic">añadir solicitud</div>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item">
+                <a href="javascript:void(0);" class="menu-link menu-toggle">
+                  <i class="menu-icon tf-icons bx bx-cube-alt"></i>
+                  <div data-i18n="Misc">configuracion de cuenta</div>
+                </a>
+                <ul class="menu-sub">
+                  <li class="menu-item">
+                    <a href="#" class="menu-link">
+                        <i class='menu-icon tf-icons bx bx-user m-2'></i>
+                      <div data-i18n="Error">Cuenta</div>
+                    </a>
+                  </li>|
+                </ul>
+               </ul>
+               </aside>
+               <!--fin del sidebar-->
+               <div class="layout-page">
+                <!-- Navbar -->
+          <nav
+          class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme"
+          id="layout-navbar"
+            >
+          <div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none">
+            <a class="nav-item nav-link px-0 me-xl-4" href="javascript:void(0)">
+              <i class="bx bx-menu bx-sm"></i>
+            </a>
+          </div>
+
+          <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
+            <!-- Search -->
+            <div class="navbar-nav align-items-center">
+              <div class="nav-item d-inline-flex align-items-center">
+                <i class="bx bx-search fs-3 lh-0 align-content-between"></i>
+                <input
+                  type="text"
+                  class="form-control border-3 shadow-none"
+                  placeholder="    Search..." aria-label="Search..."
+                />
+              </div>
+            </div>
+            <!-- /Search -->
+
+            <ul class="navbar-nav flex-row align-items-center ms-auto">
+                <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
+                    <div class="avatar avatar-online w-px-15 h-px-20 ">
+                        <i class="bx bxs-bell fs-3 lh-0 me-3"></i>
+                    </div>
+                  </a>
+              <!-- Place this tag where you want the button to render. -->
+              <!-- User -->
+              <li class="nav-item navbar-dropdown dropdown-user dropdown">
+                <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
+                  <div class="avatar avatar">
+                    <img src="../assets/img/avatars/6.png" alt class="w-px-40 h-auto rounded-circle" />
+                  </div>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <div class="d-flex">
+                        <div class="flex-shrink-0 me-3" >
+                          <div class="avatar avatar">
+                            <img src="../assets/img/avatars/6.png" alt class="w-px-40 h-auto rounded-circle" />
+                          </div>
+                        </div>
+                        <div class="flex-grow-1">
+                          <span class="fw-semibold d-block">John Doe</span>
+                          <small class="text-muted">Admin</small>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <div class="dropdown-divider"></div>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <i class="bx bx-user me-2"></i>
+                      <span class="align-middle">My Profile</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <i class="bx bx-cog me-2"></i>
+                      <span class="align-middle">Settings</span>
+                    </a>
+                  </li>
+                  <li>
+                    <div class="dropdown-divider"></div>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="auth-login-basic.html">
+                      <i class="bx bx-power-off me-2"></i>
+                      <span class="align-middle">Log Out</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <!--/ User -->
+            </ul>
+          </div>
+        </nav>
+        <div class="content-wrapper">
+            <div class="container-xxl flex-grow-1 container-p-y">
+                <div class="row">
+                    <div class="col-lg-4 mb-2 order-0">
+                      <div class="card">
+                        <div class="d-flex align-items-end row">
+                          <div class="col-sm-6">
+                            <div class="card-body">
+                              <h5 class="card-title text-primary">Envia todas tus evidencias aqui!</h5>
+                            </div>
+                          </div>
+                          <div class="col-sm-5 text-center text-sm-left">
+                            <div class="card-body pb-0 px-0 px-md-4">
+                              <img
+                                src="../img/Forms-bro.png"
+                                height="140"
+                                alt="View Badge User"
+                                data-app-dark-img="illustrations/man-with-laptop-dark.png"
+                                data-app-light-img="illustrations/man-with-laptop-light.png"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!--/ contents -->
+                    <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light"></span><i class='menu-icon tf-icons bx bx-download m-2'></i>Añadir evidencias</h4>
+                    <div class="row">
+                        <div class="col-10">
+                          <div class="card mb-4">
+                            <div class="card-body">
+                              <form>
+                                <div class="mb-3">
+                                  <label class="form-label" for="dni">identidad:</label>
+                                  <input type="text" class="form-control" id="evi_dni" />
+                                </div>
+                                <div class="mb-3">
+                                  <label class="form-label" for="ficha">ficha:</label>
+                                  <input type="text" class="form-control" id="evi_ficha"/>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label" for="programa">programa:</label>
+                                    <input type="text" class="form-control" id="evi_programa" />
+                                  </div>
+                                <div class="mb-3">
+                                    <label for="fehca" class="col-md-2 col-form-label">Fecha:</label>
+                                  <div class="input-group input-group-merge">
+                                    <input class="form-control" type="date" value="2021-06-18" id="evi_fecha" />
+                                  </div>
+                                </div>
+                                <div class="mb-3">
+                                  <label class="html5-time-input" for="hora">Hora</label>
+                                  <input class="form-control" type="time" value="12:30:00" id="evi_hora" />
+                                </div>
+                                <div class="mb-3">
+                                  <label class="form-label" for="asunto">Asunto</label>
+                                  <textarea
+                                    id="evi_asunto"
+                                    class="form-control"
+                                    placeholder="escribe aqui..."
+                                  ></textarea>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="formFile" class="form-label">adjuntar archivos</label>
+                                    <input class="form-control" type="file" id="evi_archivo" />
+                                  </div>
+                                <button type="submit" class="btn btn-primary">enviar</button>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                     </div>
+                    </div>
+       
